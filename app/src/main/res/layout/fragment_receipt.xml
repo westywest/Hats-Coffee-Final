@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptFragment"
+    android:background="@color/brown">
+
+    <TextView
+        android:id="@+id/txtpaymentSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PESANAN BERHASIL DIBUAT"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:id="@+id/success"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/txtpaymentSuccess"
+        android:background="@drawable/checklist"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJmlPesanan"
+        android:layout_below="@id/success"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Total Pembayaran"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalHarga"
+        android:layout_toRightOf="@id/txtJmlPesanan"
+        android:layout_below="@id/success"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Rp. 30.000,00"
+        android:layout_marginStart="60dp"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMPembayaran"
+        android:layout_below="@id/txtJmlPesanan"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Metode Pembayaran"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/metodePembayaran"
+        android:layout_toRightOf="@id/txtMPembayaran"
+        android:layout_below="@id/totalHarga"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Bayar di Tempat"
+        android:layout_marginStart="38dp"
+        android:textSize="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBeranda"
+        android:layout_below="@id/metodePembayaran"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:text="Beranda"
+        android:textColor="@color/brown"/>
+
+</RelativeLayout>

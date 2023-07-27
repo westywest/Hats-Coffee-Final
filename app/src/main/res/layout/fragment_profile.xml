@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@color/brown">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="20dp">
+        </TextView>
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:layout_below="@id/imgProfile"
+            android:id="@+id/bgwhite1"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textSize="20sp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@color/white"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/iconProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/imgProfile"/>
+
+        <TextView
+            android:layout_below="@id/imgProfile"
+            android:id="@+id/txtInputNama"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconProfile"
+            android:layout_marginTop="70dp"
+            android:textSize="20sp"
+            android:text="Nama Pengguna"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_below="@id/bgwhite1"
+            android:id="@+id/bg2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@color/white"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/iconTlp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/teleponblack"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/bgwhite1"/>
+
+        <TextView
+            android:layout_below="@id/bgwhite1"
+            android:id="@+id/txtInputTlp"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconTlp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="No Telepon"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_below="@id/bg2"
+            android:id="@+id/bg3"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:background="@drawable/roundedcorner"
+            android:backgroundTint="@color/white"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/iconEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/bg2"/>
+
+        <TextView
+            android:layout_below="@id/bg2"
+            android:id="@+id/txtInputEmail"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconTlp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="Email"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogout"
+            android:layout_below="@id/bg3"
+            android:layout_marginTop="130dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:text="LOG OUT"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

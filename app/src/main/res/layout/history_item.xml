@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/brown"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/roundedcorner">
+
+        <TextView
+            android:id="@+id/txtNamaMinuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@id/images"
+            android:text="Americano"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNamaMinuman"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/images"
+            android:text="Jumlah Pesanan :"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNamaMinuman"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtJumlah"
+            android:text="2"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtJumlah"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/images"
+            android:text="Total Harga           :"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlah"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtTotal"
+            android:text="15.000"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/images"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/americano" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

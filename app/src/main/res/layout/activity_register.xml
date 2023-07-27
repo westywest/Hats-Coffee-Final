@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="Sign Up"
+            android:textColor="@color/brown"
+            />
+
+        <View
+            android:id="@+id/picHC"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtRegister"
+            android:background="@drawable/logofix"
+            android:layout_centerHorizontal="true"/>
+<!--form register-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textEmailLayout"
+            android:layout_below="@id/picHC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="text"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dp">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/textEmailLayout"
+            android:id="@+id/textNamaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputNamaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textTeleponLayout"
+            android:layout_below="@id/textNamaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon"
+                android:inputType="text"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/textTeleponLayout"
+            android:id="@+id/textPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:passwordToggleEnabled="true"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputPassId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--Tombol register-->
+        <com.google.android.material.button.MaterialButton
+            android:layout_below="@id/textPasswordLayout"
+            android:id="@+id/btnRegister"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up"
+            android:backgroundTint="@color/brown"
+            />
+
+        <TextView
+            android:id="@+id/textViewBacklogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya akun, Log in!"
+            android:textColor="@color/brown"
+            android:layout_below="@id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</ScrollView>

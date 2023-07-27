@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment"
+    android:background="@color/brown">
+
+    <TextView
+        android:id="@+id/txtHC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAIL PEMESANAN"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/txtHC"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTotal"
+        android:layout_below="@id/txtHC"
+        android:layout_marginTop="37dp"
+        android:textColor="@color/black"
+        android:text="Total"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jumlahPemesanan"
+        android:layout_below="@id/txtTotal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="2"
+        android:layout_marginStart="20dp"
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@id/txtTotal"
+        android:layout_toRightOf="@id/jumlahPemesanan"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Americano"
+        android:layout_marginStart="5dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalHarga"
+        android:layout_toRightOf="@id/jumlahPemesanan"
+        android:layout_below="@id/txtTotal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Rp. 30.000,00"
+        android:textStyle="bold"
+        android:layout_marginStart="220dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWaktu"
+        android:layout_below="@id/totalHarga"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Waktu Ambil"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJam"
+        android:layout_below="@id/txtWaktu"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Dapat diambil setelah 30 menit pemesanan."
+        android:layout_marginStart="20dp"
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtpayment"
+        android:layout_below="@id/txtJam"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Pembayaran"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rb0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar Di Tempat"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            android:layout_below="@id/txtpayment"
+            />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPesan"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/rb0"
+        android:text="Pesan Sekarang"
+        android:textSize="28dp"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="@color/brown"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

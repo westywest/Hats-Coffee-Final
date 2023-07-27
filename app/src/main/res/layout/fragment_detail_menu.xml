@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailMenuFragment"
+    android:background="@color/brown">
+
+    <TextView
+        android:id="@+id/txtHC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAIL MINUMAN"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/txtHC"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtHC"
+        android:layout_marginTop="12dp"
+        android:text="Americano"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name"
+        android:background="@drawable/americano"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_below="@id/imgDetail"
+        android:text="Americano yang dicampur air mineral"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/deskripsi"
+        android:layout_marginTop="10dp"
+        android:text="Rp. 15.000,00"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txticed"
+        android:layout_below="@id/harga"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Iced"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="17dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbIce"
+        android:layout_below="@id/txticed">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_below="@id/txticed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal Ice (Gratis)"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_below="@id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less Ice (Gratis)"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsugar"
+        android:layout_below="@id/rbIce"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Sugar"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="17dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbsugar"
+        android:layout_below="@id/txtsugar">
+        <RadioButton
+            android:id="@+id/rb21"
+            android:layout_below="@id/txtsugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal Sugar (Gratis)"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            />
+        <RadioButton
+            android:id="@+id/rb22"
+            android:layout_below="@id/rb21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less Sugar (Gratis)"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtjml"
+        android:layout_below="@id/rbsugar"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Jumlah Pesanan"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="17dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnInc"
+        android:layout_below="@id/txtjml"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:text="-"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:id="@+id/jumlah"
+        android:layout_toRightOf="@id/btnInc"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:text="1"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtjml"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btndec"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_below="@id/txtjml"
+        android:layout_toRightOf="@id/jumlah"
+        android:backgroundTint="@color/white"
+        android:text="+"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pesanSekarang"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/btnInc"
+        android:text="Pesan Sekarang"
+        android:textSize="28dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/brown"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

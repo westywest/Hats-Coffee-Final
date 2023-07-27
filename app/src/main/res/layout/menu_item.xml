@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/brown"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/roundedcorner">
+
+        <TextView
+            android:id="@+id/txtNamaMinuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@id/images"
+            android:text="Americano"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtKet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNamaMinuman"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/images"
+            android:layout_toLeftOf="@id/btnpesan"
+            android:text="Espresso yang dicampur air mineral"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/txtharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtKet"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/images"
+            android:text="15.000"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnpesan"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/brown"
+            android:text="Pesan"
+            android:textSize="12dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/images"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/americano" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
